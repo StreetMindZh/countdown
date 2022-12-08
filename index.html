@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+
+
+
+
+
+</head>
+<body>
+
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+   <source src="myVideo.mp4" type="video/mp4">
+ </video>
+ 
+ <!-- Optional: some overlay text to describe the video -->
+ <div class="content">
+   <h1>StreetMindz.com</h1>
+   <p>"the professional artist incubator</p>
+   <!-- Use a button to pause/play the video with JavaScript -->
+   <button id="myBtn" onclick="myFunction()">Pause</button>
+ </div>
+
+    <main>
+        <section class="timer-block">
+           <p class="text">One minute from now</p>
+           <p class="timer-numbers">
+              <span>0</span> : 
+              <span>00</span> : 
+              <span>00</span> : 
+              <span>00</span>
+           </p>
+           <div id="5min" class="timer-line">
+              <span></span>
+           </div>
+        </section>
+        <section class="timer-block">
+           <p class="text">Tomorrow</p>
+           <p class="timer-numbers">
+              <span>0</span> : 
+              <span>00</span> : 
+              <span>00</span> : 
+              <span>00</span>
+           </p>
+           <div id="next-month" class="timer-line">
+              <span></span>
+           </div>
+        </section>
+        <section class="timer-block">
+           <p class="text">Time left until New Year</p>
+           <p class="timer-numbers">
+              <span>0</span> : 
+              <span>00</span> : 
+              <span>00</span> : 
+              <span>00</span>
+           </p>
+           <div id="new-year" class="timer-line">
+              <span></span>
+           </div>
+        </section>   
+     </main>
+
+
+
+
+     
+</body>
+</html>
+

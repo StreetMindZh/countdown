@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CountDown</title>
 
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+
+
 
     <style>
 
@@ -22,7 +25,7 @@
 .content {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(46, 212, 16, 0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -97,6 +100,7 @@ main {
   color: rgb(255, 255, 255);
 }
         </style>
+
 </head>
 <body>
 
@@ -110,12 +114,12 @@ main {
 
       // Pause and play the video, and change the button text
       function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
+      if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+      } else {
+      video.pause();
+      btn.innerHTML = "Play";
   }
 }
 
@@ -186,11 +190,13 @@ main {
  // window.addEventListener('DOMContentLoaded', _ => {
     
  // })
+
+ 
         </script>
 
 <!-- The video -->
 <video autoplay muted loop id="myVideo">
-   <source src="Makro-34855.mp4" type="video/mp4">
+   <source src="myVideo.mp4" type="video/mp4">
  </video>
  
  <!-- Optional: some overlay text to describe the video -->

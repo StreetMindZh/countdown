@@ -1,19 +1,4 @@
- // Get the video
- var video = document.getElementById("myVideo");
 
- // Get the button
- var btn = document.getElementById("myBtn");
-
- // Pause and play the video, and change the button text
- function myFunction() {
-if (video.paused) {
-video.play();
-btn.innerHTML = "Pause";
-} else {
-video.pause();
-btn.innerHTML = "Play";
-}
-}
 
    class Countdown {
     constructor(timer, countdown, from, to) {
@@ -52,7 +37,6 @@ run() {
      this.timer.querySelector('.timer-line > span').style.width = `${percent}%`;
   }, 1000);
 }
-}
 
 window.onload = _ => {
 new Countdown(
@@ -76,6 +60,23 @@ new Countdown(
   new Date(new Date().getFullYear(), 0, 1).getTime() + 1000 * 60 * 60 * 24 * 366
 );
 };
+
+ // Get the video
+ var video = document.getElementById("myVideo");
+
+ // Get the button
+ var btn = document.getElementById("myBtn");
+
+ // Pause and play the video, and change the button text
+ function myFunction() {
+if (video.paused) {
+video.play();
+btn.innerHTML = "Pause";
+} else {
+video.pause();
+btn.innerHTML = "Play";
+}
+}
 
 
 

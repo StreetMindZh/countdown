@@ -37,6 +37,32 @@
     margin: 0;
   }
   
+    /* Coutndown Reset Button One Min from */
+
+    #countdown-but{
+    width: 100%;
+    height: 20px;
+    border-radius: NONE;
+    margin-top: 20px;
+    border: none;
+    text-transform: uppercase;
+    background: #42b883;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in;
+
+  }
+
+  #countdown-but:hover{
+    filter: brightness(115%);
+  }
+
+  #countdown-but:active{
+    transform: scale(0.95);
+
+     /* END - Coutndown Reset Button One Min from */
+  }
   main {
      
     background-color: #eee;

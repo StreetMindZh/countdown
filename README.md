@@ -1,4 +1,33 @@
-# countdown
+
+
+# countDownTimer
+
+
+Solo-Project using bootstrap5
+A JavaScript Bootstrap HTML CSS Project of the Opportunity Class 2022/23
+Pages in project as listed (order of navigation):
+
+Research
+A lot of different CountDown Samples from Codepen
+
+Tools I used:
+i did a Wordpress Post with the 
+I created a Wordpress post with the tasks and added a New Year's countdown.
+Take A look here https://streetmindz.com/551-2/
+
+I also Did a direct link to the main repositories of the Count Down
+Take A look here https://streetmindzh.github.io/countdown/
+
+Figma File: https://www.figma.com/file/UIymxiAHlSd1rL2YNyMfQu/Untitled?node-id=1%3A8&t=J1ssH5FmaEam5ua0-1
+
+After many attempts, however, I found that my knowledge of JavaScript is still very small thats at this moment SAD
+
+
+
+
+Explain Project
+
+
 Plan, organize and build the website, using HTML, CSS, Bootstrap 5, and Javascript. For the timer you can use a special font to display numbers and digits. Use input fields to configure, and buttons to control the timer.
 
 

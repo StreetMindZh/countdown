@@ -7,12 +7,48 @@
     <title>CountDown</title>
 
     <style>
+
+      /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
         * {
   padding: 0;
   margin: 0;
 }
 
 main {
+   
   background-color: #eee;
   height: 100vh;
   padding: 10px;
@@ -22,7 +58,7 @@ main {
   max-width: 960px;
   display: block;
   position: relative;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.238);
   padding: 23px 26px;
   margin: 0 auto 10px auto;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1 )
@@ -57,22 +93,41 @@ main {
   right: 26px;
   font-family: "Helvetica", Arial, sans-serif;
   font-weight: 900;
-  color: #333;
+  color: rgb(255, 255, 255);
 }
         </style>
 </head>
 <body>
 
     <script>
+
+      // Get the video
+      var video = document.getElementById("myVideo");
+
+      // Get the button
+      var btn = document.getElementById("myBtn");
+
+      // Pause and play the video, and change the button text
+      function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
         class Countdown {
-    constructor(timer, countdown, from, to) {
-       this.timer      = timer; 
-       this.countdown  = countdown;
-       this.start      = from;
-       this.finish     = to;
+         constructor(timer, countdown, from, to) {
+         this.timer      = timer; 
+         this.countdown  = countdown;
+         this.start      = from;
+         this.finish     = to;
        
-       this.run();
+         this.run();
     }
+   }
     
     run() {
        let distance = this.finish - this.start,
@@ -124,11 +179,27 @@ main {
        new Date(new Date().getFullYear(), 0, 1).getTime() + 1000 * 60 * 60 * 24 * 366
     );
  };
+
+
  
  // window.addEventListener('DOMContentLoaded', _ => {
     
  // })
         </script>
+
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+   <source src="Makro-34855.mp4" type="video/mp4">
+ </video>
+ 
+ <!-- Optional: some overlay text to describe the video -->
+ <div class="content">
+   <h1>StreetMindz.com</h1>
+   <p>"the professional artist incubator</p>
+   <!-- Use a button to pause/play the video with JavaScript -->
+   <button id="myBtn" onclick="myFunction()">Pause</button>
+ </div>
+
     <main>
         <section class="timer-block">
            <p class="text">One minute from now</p>
